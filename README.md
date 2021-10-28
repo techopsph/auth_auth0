@@ -29,7 +29,11 @@ will need to add to the add-ons path in your Odoo config
 ### Python dependencies
 If needed install pyjwt as follows:
 
-    pip install pyjwt
+    pip install pyjwt==2.1.0
+
+    or 
+
+    pip install --upgrade pyjwt==2.1.0
  
 ## Configure
 
