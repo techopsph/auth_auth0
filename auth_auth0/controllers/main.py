@@ -86,7 +86,7 @@ class Auth0OAuthLogin(OAuthLogin):
                                   {'status_code': _('Bad Request'),
                                    'status_message': _('You are not allowed access to this database (2)')})
 
-        return _get_login_redirect_url('/web')
+        return _get_login_redirect_url(login_uid, '/web')
 
     def _validate(self, authorization_code, provider_id):
         # lookup the secret for the provider
