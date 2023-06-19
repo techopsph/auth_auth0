@@ -39,7 +39,7 @@ class Auth0OAuthLogin(OAuthLogin):
                         redirect_uri=request.httprequest.url_root + 'auth0/callback',
                         state=request.session['auth0.nonce'],
                     )
-                    provider['auth_link'] = "%s?%s" % (provider['auth_endpoint'], werkzeug.url_encode(params))
+                    provider['auth_link'] = "%s?%s" % (provider['auth_endpoint'], werkzeug.urls.url_encode(params))
 
         return providers
 
