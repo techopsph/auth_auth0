@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Auth0',
-    'version': '15.0.0',
+    'version': '16.0.0',
     'author': 'Tech Ops PH',
     'summary': 'Auth0 module for Odoo',
     'website': 'https://github.com/techopsph/auth0',
