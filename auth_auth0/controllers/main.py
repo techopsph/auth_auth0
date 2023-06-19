@@ -12,7 +12,7 @@ import jwt
 import base64
 import random
 from passlib.context import CryptContext
-from odoo.addons.web.controllers.main import set_cookie_and_redirect
+from odoo.addons.web.controllers.main import _get_login_redirect_url
 
 _logger = logging.getLogger(__name__)
 
@@ -86,7 +86,7 @@ class Auth0OAuthLogin(OAuthLogin):
                                   {'status_code': _('Bad Request'),
                                    'status_message': _('You are not allowed access to this database (2)')})
 
-        return set_cookie_and_redirect('/web')
+        return _get_login_redirect_url('/web')
 
     def _validate(self, authorization_code, provider_id):
         # lookup the secret for the provider

@@ -13,8 +13,8 @@
     'data': [
         'data/data_auth0.xml',
         'data/auto_signup_data.xml',
-        'views/signup.xml',
         'views/auth0_views.xml',
+        'views/signup.xml',
         'views/templates.xml'
     ],
     'installable': True,
